@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+body{
+    background-color: white;
+
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: rebeccapurple green;   
+}   
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(20, 66, 20);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6ea873;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6ea873b3;   
+  }
+
+ul{
+    list-style-type: none;
+    margin-top: 0;
+    padding-bottom: 20px;
+    background-color: rgb(9, 68, 9);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Lato;
+
+    transition: font-size ease-in-out .1s;
+  
+    /* GPU hack for smoothing */
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+li a:hover{
+        font-size: 24px;
+        text-decoration: underline;
+}
